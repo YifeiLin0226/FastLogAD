@@ -1,0 +1,35 @@
+dataset: "BGL"
+indir: "/home/datasets/log_data/BGL/"
+data_dir: '/home/datasets/log_data/BGL/output/'
+model_dir: '/home/datasets/log_data/BGL/saved_models/electra/non_random/'
+model_path: '/home/datasets/log_data/BGL/saved_models/electra/non_random/best_model.pt'
+
+mask_dir: '/home/datasets/log_data/BGL/mask/'
+mask_num: 10
+mask_ratio: 0.50
+seq_len: 511
+
+device: cuda
+
+
+lr: 0.00003
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_weight_decay: 0.000000
+batch_size: 32
+epochs: 140
+pretrain_epoch: 40
+n_epochs_stop: 10
+
+rmd_loss_weight: 100
+rtd_loss_weight: 50
+mlm_loss_weight: 50
+random_generator: False
+
+model_configs:
+  embedding_size: 256
+  num_hidden_layers: 4
+  num_attention_heads: 4
+  intermediate_size: 256
+  output_size: 128
+  # position_embedding_type: 'relative_key_query'

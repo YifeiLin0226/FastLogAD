@@ -1,0 +1,35 @@
+dataset: "Thunderbird"
+indir: "/home/datasets/log_data/Thunderbird/"
+data_dir: '/home/datasets/log_data/Thunderbird/output/'
+model_dir: '/home/datasets/log_data/Thunderbird/saved_models/electra/random/'
+model_path: '/home/datasets/log_data/Thunderbird/saved_models/electra/random/best_model.pt'
+
+mask_dir: '/home/datasets/log_data/Thunderbird/mask/'
+mask_num: 50
+mask_ratio: 0.5
+seq_len: 511
+
+device: cuda
+
+
+lr: 0.00005
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_weight_decay: 0.00
+batch_size: 32
+epochs: 120
+pretrain_epoch: 20
+n_epochs_stop: 10
+
+rmd_loss_weight: 100
+rtd_loss_weight: 50
+mlm_loss_weight: 0
+random_generator: True
+
+model_configs:
+  embedding_size: 256
+  num_hidden_layers: 4
+  num_attention_heads: 4
+  intermediate_size: 256
+  output_size: 128
+  # position_embedding_type: 'relative_key_query'
