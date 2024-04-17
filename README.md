@@ -1,5 +1,5 @@
 # FastLogAD #
-Official Implementation of "FastLogAD: Log Anomaly Detection with Mask-Guided Pseudo Anomaly Generation and Discrimination"
+Official Implementation of "FastLogAD: Log Anomaly Detection with Mask-Guided Pseudo Anomaly Generation and Discrimination" [read here](https://arxiv.org/abs/2404.08750v1)
 ## Install Requirements ##
 ```
 pip install -r requirements.txt
